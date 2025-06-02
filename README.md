@@ -1,4 +1,5 @@
 https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/
+[link](https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/){:target="_blank"}
 ~~~
 sudo -i
 git clone https://github.com/ewalbridge/flatcar/
