@@ -15,6 +15,20 @@ services:
     volumes:
       - n8n_data:/home/node/.n8n
 
+  caddy:
+      image: caddy:latest
+      restart: unless-stopped
+      ports:
+        - "80:80"
+        - "443:443"
+      volumes:
+        - caddy_data:/data
+        - ${DATA_FOLDER}/caddy:/config
+        - ${DATA_FOLDER}/caddy/Caddyfile:/etc/caddy/Caddyfile
+
 volumes:
   n8n_data:
+    external: true
+  caddy_data:
+    external: true
   
