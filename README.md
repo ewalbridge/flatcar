@@ -7,6 +7,7 @@ reboot
 ~~~
 https://github.com/docker/compose/releases
 ~~~
+git clone https://github.com/ewalbridge/flatcar/
 sudo curl -SL https://github.com/docker/compose/releases/download/{latest}/docker-compose-linux-x86_64 --create-dirs -o /opt/bin/docker-compose
 sudo chmod +x /opt/bin/docker-compose
 cd flatcar/n8n
