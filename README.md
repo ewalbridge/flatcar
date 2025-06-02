@@ -6,7 +6,7 @@ flatcar-install -v -d /dev/sda -i ignition.json
 ~~~
 
 ~~~
-sudo curl -SL https://github.com/docker/compose/releases/download/v2.36.2/docker-compose-linux-x86_64 --create-dirs -o /opt/docker/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/{latest}/docker-compose-linux-x86_64 --create-dirs -o /opt/docker/bin/docker-compose
 sudo chmod +x /opt/docker/bin/docker-compose
 cd n8n
 sudo /opt/docker/bin/docker-compose up -d
