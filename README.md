@@ -14,5 +14,5 @@ sudo chmod +x /opt/bin/docker-compose
 ~~~
 git clone https://github.com/ewalbridge/flatcar/
 cd flatcar/n8n
-sudo /opt/bin/docker-compose up -d
+docker-compose up -d
 ~~~
