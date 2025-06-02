@@ -1,2 +1,2 @@
 git clone
-flatcar-install -d /dev/sda -i flatcar/ignition.json
+flatcar-install -v -d /dev/sda -i flatcar/ignition.json
