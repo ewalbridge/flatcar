@@ -1,8 +1,5 @@
 variant: flatcar
 version: 1.0.0
-kernel_arguments:
-  should_exist:
-    - flatcar.autologin
 passwd:
   users:
     - name: core
