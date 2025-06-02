@@ -23,12 +23,10 @@ services:
         - "443:443"
       volumes:
         - caddy_data:/data
-        - ${DATA_FOLDER}/caddy:/config
-        - ${DATA_FOLDER}/caddy/Caddyfile:/etc/caddy/Caddyfile
+        - caddy_data/caddy:/config
+        - caddy_data/caddy/Caddyfile:/etc/caddy/Caddyfile
 
 volumes:
   n8n_data:
-    external: true
   caddy_data:
-    external: true
   
