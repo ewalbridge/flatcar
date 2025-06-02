@@ -7,9 +7,8 @@ reboot
 ~~~
 https://github.com/docker/compose/releases
 ~~~
-sudo curl -SL https://github.com/docker/compose/releases/download/{latest}/docker-compose-linux-x86_64 --create-dirs -o /opt/docker/bin/docker-compose
-sudo chmod -R 755 /opt/docker/
-sudo chmod +x /opt/docker/bin/docker-compose
+sudo curl -SL https://github.com/docker/compose/releases/download/{latest}/docker-compose-linux-x86_64 --create-dirs -o /opt/bin/docker-compose
+sudo chmod +x /opt/bin/docker-compose
 cd flatcar/n8n
-sudo /opt/docker/bin/docker-compose up -d
+sudo /opt/bin/docker-compose up -d
 ~~~
