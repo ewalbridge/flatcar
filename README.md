@@ -4,7 +4,7 @@ git clone https://github.com/ewalbridge/flatcar/
 cd flatcar/
 flatcar-install -v -d /dev/sda -i ignition.json
 ~~~
-
+https://github.com/docker/compose/releases
 ~~~
 sudo curl -SL https://github.com/docker/compose/releases/download/{latest}/docker-compose-linux-x86_64 --create-dirs -o /opt/docker/bin/docker-compose
 sudo chmod +x /opt/docker/bin/docker-compose
