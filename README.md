@@ -3,6 +3,7 @@ https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/
 cd ~
 git clone https://github.com/ewalbridge/flatcar/
 flatcar-install -v -d /dev/sda -i flatcar/ignition.json
+reboot
 ~~~
 https://github.com/docker/compose/releases
 ~~~
