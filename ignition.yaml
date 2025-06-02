@@ -1,0 +1,34 @@
+variant: flatcar
+version: 1.0.0
+kernel_arguments:
+  should_exist:
+    - flatcar.autologin
+passwd:
+  users:
+    - name: core
+      password_hash: $6$sn3ZSJJJln5JkAZb$VDTKzLpCyjlEe7Kh0DKjOnEawkkOoi0tOKVbcCv0FIWSf3u9Y1p1I5YdJJ5L8uDmmMvO2CBlmJZNdxFuekjjE1
+storage:
+  luks:
+  - name: rootencrypted
+    wipe_volume: true
+    device: "/dev/disk/by-partlabel/ROOT"
+  filesystems:
+    - device: /dev/mapper/rootencrypted
+      format: ext4
+      label: ROOT
+systemd:
+  units:
+    - name: cryptenroll-helper.service
+      enabled: true
+      contents: |
+        [Unit]
+        ConditionFirstBoot=true
+        OnFailure=emergency.target
+        OnFailureJobMode=isolate
+        [Service]
+        Type=oneshot
+        RemainAfterExit=yes
+        ExecStart=systemd-cryptenroll --tpm2-device=auto --unlock-key-file=/etc/luks/rootencrypted --wipe-slot=0 --tpm2-pcrs= /dev/disk/by-partlabel/ROOT
+        ExecStart=rm /etc/luks/rootencrypted
+        [Install]
+        WantedBy=multi-user.target
