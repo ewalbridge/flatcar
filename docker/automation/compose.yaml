@@ -5,8 +5,6 @@ services:
   caddy:
   
     image: caddy:latest
-    labels:
-      - io.portainer.accesscontrol.public
     restart: unless-stopped
     container_name: caddy
     ports:
@@ -18,8 +16,6 @@ services:
   n8n:
   
     image: n8nio/n8n:latest
-    labels:
-      - io.portainer.accesscontrol.public
     restart: always
     container_name: n8n
     ports:

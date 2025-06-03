@@ -4,8 +4,6 @@ services:
 
   portainer:
     image: portainer/portainer-ce:latest
-    labels:
-      - io.portainer.accesscontrol.public
     restart: always
     container_name: portainer-server
     ports:
