@@ -6,5 +6,6 @@ flatcar-install -v -d /dev/xvda -i flatcar/ignition.json
 eject
 reboot
 
-hostnamectl set-hostname flatcar
+sudo hostnamectl set-hostname flatcar
+passwd
 ~~~
