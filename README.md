@@ -5,4 +5,6 @@ git clone https://github.com/ewalbridge/flatcar/
 flatcar-install -v -d /dev/xvda -i flatcar/ignition.json
 eject
 reboot
+
+hostnamectl set-hostname flatcar
 ~~~
