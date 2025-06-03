@@ -1,8 +1,5 @@
-name: monitoring
-
 services:
   watchtower:
-
     image: containrrr/watchtower
     labels:
       io.portainer.accesscontrol.users: admin
