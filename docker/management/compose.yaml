@@ -1,7 +1,4 @@
-name: management
-
 services:
-
   portainer:
     image: portainer/portainer-ce:latest
     restart: always
@@ -13,6 +10,5 @@ services:
       - portainer_data:/data
 
 volumes:
-
   portainer_data:
   
