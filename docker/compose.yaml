@@ -3,7 +3,7 @@ name: logicfire
 services:
 
   caddy:
-    image: caddy:latest
+    image: _/caddy:latest
     restart: unless-stopped
     container_name: caddy
     ports:
