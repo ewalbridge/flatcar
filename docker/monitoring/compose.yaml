@@ -4,6 +4,8 @@ services:
   watchtower:
 
     image: containrrr/watchtower
+    labels:
+      io.portainer.accesscontrol.users: admin
     restart: always
     container_name: watchtower
     volumes:
@@ -15,3 +17,5 @@ services:
       TZ: America/New_York
       WATCHTOWER_ROLLING_RESTART: true
       WATCHTOWER_SCHEDULE: "0 0 6 * * *"
+
+
