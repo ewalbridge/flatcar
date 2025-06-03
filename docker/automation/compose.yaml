@@ -1,8 +1,9 @@
-name: logicfire
+name: automation
 
 services:
 
   caddy:
+  
     image: caddy:latest
     restart: unless-stopped
     container_name: caddy
