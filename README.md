@@ -17,4 +17,8 @@ sudo chmod +x /opt/bin/docker-compose
 git clone https://github.com/ewalbridge/flatcar/
 cd flatcar/docker/automation/
 docker-compose up -d
+'cd flatcar/docker/management/
+docker-compose up -d
+cd flatcar/docker/monitoring/
+docker-compose up -d
 ~~~
