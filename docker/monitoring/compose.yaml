@@ -4,6 +4,8 @@ services:
   watchtower:
 
     image: containrrr/watchtower
+    labels:
+      - io.portainer.accesscontrol.public
     restart: always
     container_name: watchtower
     volumes:
