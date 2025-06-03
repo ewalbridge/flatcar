@@ -10,11 +10,11 @@ services:
       - "80:80"
       - "443:443"
     volumes:
-      - ./conf/Caddyfile:/etc/caddy/Caddyfile
+      - ./etc/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy_data:/data
   n8n:
   
-    image: n8nio/n8n
+    image: n8nio/n8n:latest
     restart: always
     container_name: n8n
     ports:
