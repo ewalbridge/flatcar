@@ -12,7 +12,7 @@ eject
 reboot
 ~~~
 ~~~
-ssh core@hostname
+ssh core@flatcar
 ~~~
 ~~~
 sudo hostnamectl set-hostname flatcar
