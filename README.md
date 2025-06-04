@@ -1,6 +1,7 @@
 https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/
 ~~~
 winget install --id Fedora.CoreOS.butane
+butane --pretty ignition.yaml --output ignition.json
 ~~~
 
 ~~~
