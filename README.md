@@ -11,7 +11,9 @@ flatcar-install -v -d /dev/xvda -i flatcar/ignition.json
 eject
 reboot
 ~~~
-
+~~~
+ssh core@hostname
+~~~
 ~~~
 sudo hostnamectl set-hostname flatcar
 passwd
