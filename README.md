@@ -15,6 +15,7 @@ reboot
 ssh core@flatcar
 ~~~
 ~~~
+sudo timedatectl set-timezone UTC
 sudo hostnamectl set-hostname flatcar
 passwd
 ~~~
