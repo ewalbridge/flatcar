@@ -9,5 +9,23 @@
         "passwordHash": "$6$kFoklRQj$U8SfjN8vmI1KuJSTGaM3vNdQ0W8BTIvELJj7DS4Eix0WZ.81h0F6s0YTq6qVJfXc8vhKpws0CJ2UmDsGRezz40"
       }
     ]
+  },
+  "storage": {
+    "links": [
+      {
+        "overwrite": true,
+        "path": "/etc/systemd/system/multi-user.target.wants/docker.service",
+        "hard": false,
+        "target": "/usr/lib/systemd/system/docker.service"
+      }
+    ]
+  },
+  "systemd": {
+    "units": [
+      {
+        "enabled": true,
+        "name": "docker.service"
+      }
+    ]
   }
 }

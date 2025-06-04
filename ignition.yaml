@@ -4,3 +4,13 @@ passwd:
   users:
     - name: core
       password_hash: $6$kFoklRQj$U8SfjN8vmI1KuJSTGaM3vNdQ0W8BTIvELJj7DS4Eix0WZ.81h0F6s0YTq6qVJfXc8vhKpws0CJ2UmDsGRezz40
+systemd:
+  units:
+    - name: docker.service
+      enabled: true
+storage:
+  links:
+    - path: /etc/systemd/system/multi-user.target.wants/docker.service
+      target: /usr/lib/systemd/system/docker.service
+      hard: false
+      overwrite: true
