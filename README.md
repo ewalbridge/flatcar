@@ -3,7 +3,6 @@ https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/
 winget install --id Fedora.CoreOS.butane
 butane --pretty ignition.yaml --output ignition.json
 ~~~
-
 ~~~
 sudo -i
 git clone https://github.com/ewalbridge/flatcar/
@@ -15,7 +14,7 @@ reboot
 ssh core@flatcar
 ~~~
 ~~~
-sudo timedatectl set-timezone UTC
-sudo hostnamectl set-hostname flatcar
 passwd
+sudo hostnamectl set-hostname flatcar
+sudo timedatectl set-timezone UTC
 ~~~
