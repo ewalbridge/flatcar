@@ -29,7 +29,7 @@ sudo timedatectl set-timezone UTC
 
 ### Install XCP-ng vm tools
 ~~~
-
+sed -i 's|/usr/sbin/|/opt/oem/xs/|g' /etc/systemd/system/xe-linux-distribution.service
 ~~~
 
 ### Install Portainer
