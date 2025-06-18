@@ -1,4 +1,5 @@
 https://www.flatcar.org/docs/latest/installing/bare-metal/installing-to-disk/
+# Convert yaml file to json
 ~~~
 winget install --id Fedora.CoreOS.butane
 butane --pretty ignition.yaml --output ignition.json
