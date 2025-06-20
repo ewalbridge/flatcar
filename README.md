@@ -42,3 +42,8 @@ systemctl enable /etc/systemd/system/xe-linux-distribution.service
 ~~~
 docker run -d -p 8000:8000 -p 9000:9000 --name portainer --restart=always --label com.centurylinklabs.watchtower.enable=false -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ee:lts
 ~~~
+
+### Reset Flatcar Container Linux
+~~~
+flatcar-reset
+~~~
