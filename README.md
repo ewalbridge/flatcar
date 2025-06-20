@@ -6,7 +6,7 @@ winget install --id Fedora.CoreOS.butane
 butane --pretty ignition.yaml --output ignition.json
 ~~~
 
-### Boot flatcar iso and run the flatcar-install command as root
+### Boot Flatcar Container Linux iso and run the flatcar-install command as root
 ~~~
 sudo -i
 git clone https://github.com/ewalbridge/flatcar/
@@ -15,7 +15,7 @@ eject
 reboot
 ~~~
 
-### SSH to flatcar
+### SSH to Flatcar Container Linux
 ~~~
 ssh core@flatcar
 ~~~
